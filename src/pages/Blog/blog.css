@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+#blog {
+  max-width: 1140px;
+  margin: 50px auto 0px;
+}
+#blog .area_post {
+  padding: 20px;
+}
+#blog .area_post h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#blog .area_post .c_post {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 20px;
+}
+#blog .area_post .c_post::-webkit-scrollbar {
+  height: 0px;
+}
+#blog .area_post .c_post .post {
+  max-width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+}
+#blog .area_post .c_post .post .post_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+#blog .area_post .c_post .post img {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#blog .area_post .c_post .post p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#blog .area_post .c_post .post button {
+  padding: 10px 20px;
+  border: none;
+  background-color: lightblue;
+  color: darkcyan;
+}/*# sourceMappingURL=blog.css.map */

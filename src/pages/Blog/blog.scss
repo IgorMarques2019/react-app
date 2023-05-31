@@ -1,0 +1,57 @@
+@import "../../components/Global/global";
+#blog {
+  max-width: 1140px;
+  margin: 50px auto 0px;
+
+  .area_post {
+    padding: 20px;
+    h2 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    .c_post {
+      display: flex;
+      flex-wrap:nowrap;
+      overflow-x: scroll;
+      gap: 20px;
+      &::-webkit-scrollbar {
+        height:0px;
+      }
+
+      .post {
+        max-width: 300px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        border: 1px solid $button;
+        border-radius: 5px;
+        .post_info {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: space-between;
+        }
+        img {
+          aspect-ratio: 16/9;
+          object-fit: cover;
+          object-position: center;
+        }
+        p {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        button {
+          padding: 10px 20px;
+          border: none;
+          background-color: $button;
+          color: darkcyan;
+        }
+      }
+    }
+  }
+}
